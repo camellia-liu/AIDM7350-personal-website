@@ -1,0 +1,257 @@
+.education-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.education-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.edu-left {
+    flex: 0 0 35%;
+    border-right: 2px solid #eee;
+    padding-right: 2rem;
+}
+
+.edu-right {
+    flex: 1;
+}
+
+.duration {
+    font-size: 1.1rem;
+    color: #3498db;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.institution {
+    color: #2c3e50;
+    margin-bottom: 0.8rem;
+}
+
+.location {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+}
+
+.degree {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.gpa {
+    background: #f8f9fa;
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.course-list {
+    columns: 2;
+    list-style: none;
+}
+
+.course-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.course-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+/* 新增分栏样式 */
+.two-column {
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+
+.bio-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.profile-photo {
+    flex: 0 0 35%;
+    position: relative;
+}
+
+.profile-photo img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.highlight-box {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.competencies {
+    columns: 2;
+    list-style-type: none;
+}
+
+.competencies li {
+    padding: 0.5rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.competencies li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #3498db;
+}
+
+/* 优化现有样式 */
+.hero {
+    padding: 6rem 0;
+}
+
+.subtitle {
+    font-size: 1.8rem;
+    color: #7f8c8d;
+    margin: 1.5rem 0;
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+/* 基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* 导航栏样式 */
+nav {
+    background: #2c3e50;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* 英雄区样式 */
+/* 背景 */
+.hero {
+    background: url('背景.webp') center/cover;
+    position: relative;
+}
+
+
+/* 字体 */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    color: #7f8c8d;
+    margin-bottom: 2rem;
+}
+
+/* 通用区块样式 */
+.section {
+    padding: 4rem 0;
+}
+
+.bg-light {
+    background: #f8f9fa;
+}
+
+/* 时间线样式 */
+.timeline-item {
+    background: white;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* 项目卡片样式 */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
